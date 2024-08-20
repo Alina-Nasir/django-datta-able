@@ -29,6 +29,14 @@
           <a href="{% url 'tables' %}" class="nav-link "><span class="pcoded-micon"><i
                 class="feather icon-server text-c-green"></i></span><span class="pcoded-mtext">Dynamic Tables</span></a>
         </li>
+        <li class="nav-item {% if 'invoices' in segment %}active{% endif %}">
+          <a href="{% url 'invoices' %}" class="nav-link "><span class="pcoded-micon"><i
+                class="feather icon-server text-c-green"></i></span><span class="pcoded-mtext">Invoice Tables</span></a>
+        </li>
+        <li class="nav-item {% if 'port-invoices' in segment %}active{% endif %}">
+          <a href="{% url 'port-invoices' %}" class="nav-link "><span class="pcoded-micon"><i
+                class="feather icon-server text-c-green"></i></span><span class="pcoded-mtext">Port Invoice Tables</span></a>
+        </li>
         <li class="nav-item">
           <a target="_blank" href="/api/product/" class="nav-link "><span class="pcoded-micon"><i
                 class="feather icon-zap text-c-green"></i></span><span class="pcoded-mtext">Generated API</span></a>

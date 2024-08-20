@@ -190,6 +190,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DYNAMIC_DATATB = {
     # SLUG -> Import_PATH 
     'product'  : "home.models.Product",
+    'invoice'  : "home.models.Invoice",
+    'port-invoice'  : "home.models.PortInvoice",
 }
 ########################################
 
@@ -197,6 +199,8 @@ DYNAMIC_DATATB = {
 API_GENERATOR = {
     # SLUG -> Import_PATH 
     'product'  : "home.models.Product",
+    'invoice'  : "home.models.Invoice",
+    'port-invoice'  : "home.models.PortInvoice",
 }
 
 REST_FRAMEWORK = {
